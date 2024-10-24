@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav {
+    background-color: rgb(173, 132, 212);
+    color: aliceblue;
+    height: 55px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+.gamecontener {
+
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+
+}
+
+.conterner {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    position: relative;
+
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(195, 155, 233);
+}
+
+
+.gameinfo {
+    padding: 0 34px;
+
+}
+
+.gameinfo h1{
+    font-size: 2.5rem;
+
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.b1-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+#reset {
+
+    background-color: rgb(52, 228, 33);
+    margin: 5px;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.info {
+    font-size: 35px;
+
+}
+.line{
+    background-color: black;
+    height:3px;
+    width: 0;
+    position: absolute;
+    background-color: rgb(114, 5, 216);
+    transition: width 1s ease-in-out;
+    
+}
+
+
+@media screen and (max-width :950px) {
+    .gamecontener {
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+
+    .gameinfo {
+        margin-top: 34px;
+
+    }
+
+    .gameinfo h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .conterner{
+        
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+
+    .line{
+       display: none;
+        
+    }
+
+
+}
